@@ -1,0 +1,46 @@
+.artistsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* background-color: black; */
+}
+
+.artistListImage{
+    margin: 30px;
+    width: 250px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease 0s;
+}
+.artistListImage:hover{
+    box-shadow: 0px 5px 50px rgba(255, 255, 100, 0.4);
+    transform: translateY(-7px);
+}
+
+.artistCard a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-left: 38px;
+    margin-right: 38px;
+}
+
+.titleH1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

@@ -1,0 +1,195 @@
+/* .artistImage{
+    border-radius: 50%;
+    border-style: solid;
+
+} */
+.artistImage{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+ /* background-color: lightgray; */
+ width: 350px;
+ height: 250px;
+ border-width: 2px;
+ border-style: solid;
+ border-color: black;
+ margin: 5px;
+ border-radius: 50%;
+ /* box-shadow: 0px 2px 30px rgba(255, 255, 255, 0.4); */
+ box-shadow: 0px 5px 50px rgba(255, 255, 100, 0.4);
+ transition: all 0.3s ease 0s;
+ cursor: pointer;
+ /* filter: grayscale(100%) */
+}
+
+.artistDetails{
+    /* margin: 50px; */
+    margin-bottom: 100px;
+    margin-top: 70px;
+    /* background-color: red; */
+    width: 100%;
+    height: 100px;
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    /* background-color: white; */
+    background-color: rgb(255,255,100);
+    /* box-shadow: 0px 5px 50px rgba(255, 255, 255, 0.4); */
+    box-shadow: 0px 5px 50px rgba(255, 255, 100, 0.4);
+    transition: all 0.3s ease 0s;
+    justify-content: center;
+    align-items: center;
+}
+
+.songsDiv {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: green; */
+    /* width: 30%; */
+    /* height: 900px; */
+    /* overflow: auto; */
+    /* background-color: rgb(255,255,100); */
+    color: white;
+    /* margin: 50px; */
+    overflow: auto;
+
+}
+.songsDiv a {
+    color: white;
+
+    /* margin: 50px; */
+}
+
+.outerBox{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+background-color: black;
+height: 890px;
+    /* flex-direction: column; */
+}
+
+.artistName {
+    color:white;
+}
+
+/* .songCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 400px;
+    background-color: white;
+} */
+
+.songCard a {
+    /* background-color: white; */
+    color: black;
+    font-weight: bold;
+}
+
+
+  .songCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin:10px;
+    /* background-color: rgb(255,255,100); */
+    }
+
+    .songCard:hover {
+    /* background-color: #2EE59D; */
+    /* background-color:rgb(245, 245, 22); */
+    /* box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4); */
+    /* box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4); */
+    box-shadow: 0px 15px 20px rgba(255, 255, 100, 0.4);
+    background-color: rgb(255,255,100);
+    /* color: #fff; */
+    color: black;
+    font-weight: bold;
+    transform: translateY(-7px);
+  }
+  .artistImage:hover {
+    /* background-color: #2EE59D; */
+    /* box-shadow: 0px 15px 20px rgba(1, 19, 11, 0.4); */
+    /* box-shadow: 0px 5px 50px rgba(255, 255, 255, 0.4); */
+    box-shadow: 0px 15px 50px rgba(255, 255, 100, 0.4);
+    color: #fff;
+    transform: translateY(-1px);
+  }
+  .artistDetails:hover{
+    /* box-shadow: 0px 20px 50px rgba(255, 255, 255, 0.4); */
+    box-shadow: 0px 15px 50px rgba(255, 255, 100, 0.4);
+    /* box-shadow: 0px 15px 20px rgba(255, 255, 100, 0.4); */
+    color: #fff;
+  }
+
+
+  /* .search {
+    background: none;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    transition: all .75s ease-in-out;
+  } */
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    outline: none;
+    margin:10px;
+  }
+    .search input {
+        width: 450px;
+        height: 35px;
+        border-radius: 45px;
+        border: none;
+        text-decoration: none;
+    }
+input:focus{
+    outline:none;
+}
+
+.search:hover {
+    /* background-color: #2EE59D; */
+    /* box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4); */
+    /* color: #fff; */
+    box-shadow: 0px 15px 20px rgba(255, 255, 100, 0.4);
+    transform: translateY(-7px);
+  }
+
+  i{
+      color:black;
+  }

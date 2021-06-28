@@ -1,0 +1,61 @@
+.lyricsDivClass a{
+    background-color: rgb(255,255,100);
+    font-weight: bold;
+    transition: all 0.3s ease 0s;
+}
+.lyricsDivClass a:hover{
+    transform: translateY(-7px);
+    /* background-color: rgb(255,255,100); */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+
+}
+
+.modalDiv{
+    height: 300px;
+    width: 500px;
+}
+.primarySongDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.primarySongDiv h1,h2,h3,h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+
+.songImage{
+    margin-top: 30px;
+    width: 450px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease 0s;
+    /* border-radius: 40%; */
+}
+.songImage:hover{
+    box-shadow: 0px 5px 50px rgba(255, 255, 100, 0.4);
+    transform: translateY(-7px);
+}
+
+.fa-youtube{
+    color: red;
+}
+
+.tag{
+    text-transform: capitalize;
+}
+
+
+.lyricsDivClass{
+    font-family: 'Roboto', sans-serif;
+    /* font-size: 13px; */
+    /* text-transform: uppercase; */
+    /* letter-spacing: 2px; */
+}
