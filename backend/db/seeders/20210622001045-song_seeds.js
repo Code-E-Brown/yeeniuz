@@ -64,7 +64,7 @@ module.exports = {
         youtubeUrl: 'https://www.youtube.com/watch?v=dBrRBZy8OTs'
       },
       {
-        artistId: 6,
+        artistId: 7,
         userId: 1,
         title: 'Touch my Body',
         tagId: 4,
