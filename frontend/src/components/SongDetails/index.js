@@ -67,6 +67,7 @@ export const SongDetails = () => {
 
     const mouseUp = (e) => {
         e.preventDefault()
+
         // console.log('boi', tagType)
         // console.log(tagType)
         //  if (tagType) {
@@ -169,12 +170,12 @@ export const SongDetails = () => {
 
                     {selection.length > 1 && sessionUser ? (
 
-                        <AnnotationFormModal selection={selection} songId={songId} fullLine={fullLine} />
+                        <AnnotationFormModal setSelection={setSelection} selection={selection} songId={songId} fullLine={fullLine} />
                     ) : (null)
                         // <button onClick={editButton}>Edit</button>
                     }
                     <h3>Lyrics:</h3>
-                    <div className='lyricsDivClass' onClick={testOnClick} onMouseUp={mouseUp} dangerouslySetInnerHTML={{ __html: song.lyrics }}></div>
+                    <div className='lyricsDivClass' onMouseDown={e => setSelection('')} onMouseOver={e => setAnnotationView(false)} onClick={testOnClick} onMouseUp={mouseUp} dangerouslySetInnerHTML={{ __html: song.lyrics }}></div>
 
                     {/* <div>{song.lyrics}</div> */}
                 </div>

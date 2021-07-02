@@ -3,10 +3,11 @@ import { Modal } from '../../context/Modal';
 import AnnotationForm from './AnnotationForm'
 
 
-function AnnotationFormModal({ selection, fullLine, songId }) {
+function AnnotationFormModal({ selection, setSelection, fullLine, songId }) {
     const [showModal, setShowModal] = useState(true);
 
     const closeModal = () => {
+        setSelection('')
         setShowModal(false)
     }
 
@@ -16,7 +17,7 @@ function AnnotationFormModal({ selection, fullLine, songId }) {
             {/* <button onClick={() => setShowModal(true)}>Edit</button> */}
             {showModal && (
                 <Modal onClose={() => setShowModal(false)}>
-                    <AnnotationForm closeModal={closeModal} selection={selection} fullLine={fullLine} songId={songId} />
+                    <AnnotationForm setSelection={setSelection} closeModal={closeModal} selection={selection} fullLine={fullLine} songId={songId} />
                 </Modal>
             )}
         </>

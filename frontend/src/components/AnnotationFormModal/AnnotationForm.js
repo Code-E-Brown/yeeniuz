@@ -7,7 +7,7 @@ import './AnnotationForm.css'
 
 
 
-function AnnotationForm({ selection, fullLine, songId, closeModal }) {
+function AnnotationForm({ selection, setSelection, fullLine, songId, closeModal }) {
     const [annotationText, setAnnotationText] = useState('')
 
     // console.log(selection, fullLine, songId, editButton)
@@ -32,7 +32,7 @@ function AnnotationForm({ selection, fullLine, songId, closeModal }) {
             songId,
             annotationText
         }
-        console.log('this is your payload', data)
+        // console.log('this is your payload', data)
 
         if (data) {
             const newAnnotation = await dispatch(createAnnotation(data))
@@ -40,7 +40,8 @@ function AnnotationForm({ selection, fullLine, songId, closeModal }) {
             await dispatch(getAnnotationsForSong(+songId))
             // setReloader(!reloader)
             // console.log(newAnnotation)
-            closeModal()
+            
+            await closeModal()
         }
     }
 
