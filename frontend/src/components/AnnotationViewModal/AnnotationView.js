@@ -198,9 +198,9 @@ function AnnotationView({ sessionUser, annotationId, annotations, closeModal }) 
                     </div>
                     :
                     <div>
-                        {mainAnnotation &&
-                            <div>{mainAnnotation?.body}</div>}
+                        <div><h3>Log in to view annotation or add your own!</h3></div>
                     </div>
+
                 }
             </div>
 
