@@ -19,6 +19,16 @@ function LoginForm() {
             }
         );
     };
+    const handleDemoSubmit = (e) => {
+        e.preventDefault();
+        setErrors([]);
+        return dispatch(sessionActions.login({ credential: 'testUser', password: "password" })).catch(
+            async (res) => {
+                const data = await res.json();
+                if (data && data.errors) setErrors(data.errors);
+            }
+        );
+    };
 
     return (
         <form className='modalDiv' onSubmit={handleSubmit}>
@@ -45,7 +55,11 @@ function LoginForm() {
                     required
                 />
             </label>
-            <button type="submit">Log In</button>
+
+            <div>
+                <button type="submit">Log In</button>
+                <button onClick={handleDemoSubmit}>Demo</button>
+            </div>
         </form>
     );
 }

@@ -151,7 +151,9 @@ export const SongDetails = () => {
                     <EditAlbumImageModal specificSongId={songId} />
                 }
                 {annotationView &&
-                    < AnnotationViewModal specificSongId={songId} sessionUser={sessionUser} annotations={song.Annotations} annotationId={annotationId} />
+                    <>
+                        < AnnotationViewModal specificSongId={songId} sessionUser={sessionUser} annotations={song.Annotations} annotationId={annotationId} />
+                    </>
                 }
                 <h1>{song.title}</h1>
                 <Link to={`/artists/${song.Artist.id}`}>
@@ -179,7 +181,8 @@ export const SongDetails = () => {
 
                     {/* <div>{song.lyrics}</div> */}
                 </div>
-                <SongComments id={song.id} />
+                {/* <SongComments id={song.id} /> */}
+                {/* *********** COMMENTS ABOVE ARE WORK IN PROGRESS */}
             </div>
         )
     } else {

@@ -21,6 +21,25 @@ export const ArtistsDetails = () => {
         e.preventDefault()
         setEditImageButton(!editImageButton)
     }
+
+    // let content = () => {
+    //     return (
+    //         <>
+    //             {artist.Songs &&
+    //                 artist.Songs.map(song => (
+    //                     song.title.includes("search input") ?
+    //                         < NavLink key={song.id} to={`/songs/${song.id}`}>
+    //                             <div className="songCard">
+    //                                 {song.title}
+    //                             </div>
+    //                         </NavLink>
+    //                         :
+    //                         (null)
+    //                 ))
+    //             }
+    //         </>
+    //     )
+    // }
     if (artist) {
 
         return (
